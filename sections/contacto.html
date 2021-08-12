@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto por consultas, dudas o reclamos  - HypeCreature®">
+    <meta name="keywords"  content="contacto, mensaje, consulta, duda, reclamo, pregunta, consignacion, zapatillas, sneakers, ropa, clothing, accesorios, accesories, ropa hype, zapatillas hype, hype, hyped, air jordan, nike, adidas, supreme, rip n dip, burberry, prada, casio, canada goose">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Hypebeast Contacto</title>
+</head>
+<body>
+
+    <header>
+        <div class="logoHeader">
+            <div class="logoFoto">
+                <a href="../index.html">
+                    <img src="../logo/logoHypeNegro.jpg" alt="logo de lobo enojado">
+                </a> 
+            </div>
+            <div class="logoHype">
+                <a href="../index.html">
+                    <h1>HYPECREATURE</h1>
+                </a>
+            </div>
+        </div>
+        
+        <nav class="navBar"> 
+            <ul class="navList">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./sneakers.html">Sneakers</a> 
+                </li>
+                <li>
+                    <a href="./clothing.html">Clothing</a> 
+                </li>
+                <li>
+                    <a href="./accesories.html">Accessories</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="./logIn.html">Log In</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    
+    <section>
+        <div class="contenedorTitulo">
+            <h2 class="tituloSeccion">Contacto</h2>
+        </div>
+    </section>
+
+    <section>
+        <form id="formularioDeContacto" action="text" method="GET" enctype="text/plain">
+            <fieldset class="fieldsetSeparacion">
+                <legend class="legendContacto">Contacto</legend>
+                    <label for="nombre">Nombre</label>
+                        <input type="text" value="" id="nombre" name="nombre" placeholder="Ingresa tu nombre...">
+                    <br>
+                    <br>
+                        <label for="apellido">Apellido</label>
+                            <input type="text" value="" id="apellido" name="apellido" placeholder="Ingresa tu apellido...">
+                    <br>
+                    <br>
+                        <label for="email">Email</label>
+                            <input type="text" value="" id="email" name="email" placeholder="Ingresa tu email...">
+                    <br>
+                    <br>
+                        <label for="edad">Edad</label> 
+                            <input type="number" min="1" max="99" id="edad">
+                    <br>
+                    <br>
+                        <label for="genero">Género</label>
+                            <select id="genero">
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                                <option>Sin especificar</option>
+                            </select>
+                    <br>
+                    <br>
+                        <label for="pais">País</label>
+                            <select id="pais">
+                                <option>Argentina</option>
+                                <option>Chile</option>
+                                <option>Paraguay</option>
+                                <option>Uruguay</option>
+                                <option>Brasil</option>
+                                <option>Otro</option>
+                            </select>
+                    <br>
+                    <br>
+                        <label for="newsletter">Desea recibir nuestro newsletter?</label>
+                            <input type="checkbox" id="newsletter" name="Acepta" value="1">
+                    <br>
+                    <br>
+                        <label for="comentarios">Consultas, comentarios o sugerencias</label>
+                    <br>
+                    <br>
+                            <textarea  id="comentarios" cols="30" rows="10"></textarea>
+                    <br>
+                            <input type="button" value="Enviar">
+                            <input type="reset" value="Limpiar formulario">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer id="pieDePagina">
+        <div class="fondoRosa">
+            <div class="redes">
+                <div>
+                    <h5>Seguinos en nuestras redes</h5>
+                </div>
+                <div class="logosRedes">
+                    <img src= "../fotos/redes/instagram-logo.png" alt= "Logo Instagram">
+                    <img src="../fotos/redes/facebook-logo.png" alt="logo Facebook">
+                    <img src="../fotos/redes/twitter-logo.png" alt="logo twitter">
+                    <img src="../fotos/redes/whatsapp-logo.png" alt="logo whatsapp">
+                </div>
+            </div>
+
+            <div class="menuFooter">
+                <ul>
+                    <li><a href="#">Nosotros </a></li>
+                    <li><a href="#">Talles</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="metodosDePago">
+                <div>
+                    <h5>Métodos de pago</h5>
+                </div>
+                <div class="logosPagos">
+                    <img src="../fotos/metodosDePago/payment-american.png" alt="american express">
+                    <img src="../fotos/metodosDePago/payment-visa.png" alt="visa">
+                    <img src="../fotos/metodosDePago/payment-mastercard.png" alt="mastercard">
+                    <img src="../fotos/metodosDePago/payment-paypal.png" alt="paypal">
+                    <img src="../fotos/metodosDePago/payment-mercadopago.png" alt="mercado pago">
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright 2021 - HypeCreature - All rights reserved</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+.contenedorDatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(../fotos/banners/nikedunksb-chunkybanner.jpg);
+    background-position: center;
+    height: 45rem;
+    margin: 0 auto;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+    .contenedorMapa {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        border-radius: 0.2rem;
+        .mapa{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+    }
+    .contenedorTextoMapa {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: center;
+        text-shadow: 0.2rem 0.2rem 0.2rem $color2;
+        .tituloMapa {
+            font-size: 4rem;
+            font-weight: bolder;
+            color: $color1;
+            text-transform: uppercase;
+        }
+        .textoMapa {
+            font-size: 2rem;
+            color: $color1;
+        }
+    }
+}

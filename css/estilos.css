@@ -1,0 +1,1139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #070606;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.logoHeader {
+  display: flex;
+  flex-direction: row;
+  height: 9rem;
+  margin: 0.5rem;
+}
+.logoHeader .logoFoto {
+  display: flex;
+  width: 8.5rem;
+}
+.logoHeader .logoFoto img {
+  height: 8.5rem;
+  width: 8.5rem;
+}
+.logoHeader .logoHype {
+  display: flex;
+  width: 30rem;
+}
+.logoHeader .logoHype a {
+  display: flex;
+  text-decoration: none;
+}
+.logoHeader .logoHype a h1 {
+  padding: 2.3rem;
+  padding-left: 0.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 2px #b39495;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #b39495;
+  font-size: 1.5rem;
+  height: 3.5rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  overflow: hidden;
+  align-items: center;
+}
+.navList li {
+  float: left;
+  list-style: none;
+}
+.navList li a {
+  display: inline-block;
+  color: #0d0a0a;
+  padding: 0.6rem;
+  gap: 1.25rem;
+  text-decoration: none;
+}
+
+.navList li a:hover {
+  color: #715b5c;
+}
+
+.banner {
+  background: url(../fotos/banners/banner1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 70rem;
+  max-width: 100%;
+  color: white;
+}
+.banner .tituloBanner, .banner .botonBanner, .banner .tituloAbajoBanner {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  text-align: left;
+  padding: 0.4rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-shadow: 0.2rem 0.2rem 0.2rem #b39495;
+  transform: translate(6rem, 9.3rem);
+}
+.banner .botonBanner a {
+  text-decoration: none;
+  color: #0d0a0a;
+}
+
+.tituloBanner:hover, .banner .tituloAbajoBanner:hover, .banner .botonBanner:hover {
+  background-color: #b39495;
+}
+
+.grillaSections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 7px 7px;
+  grid-auto-flow: row;
+  grid-template-areas: "sneakers sneakers sneakers sneakers accesorios accesorios" "sneakers sneakers sneakers sneakers accesorios accesorios" "brands brands clothing clothing clothing clothing" "brands brands clothing clothing clothing clothing" "brands brands nosotros nosotros contacto contacto" "brands brands nosotros nosotros contacto contacto";
+  padding: 7rem;
+  height: 80rem;
+}
+
+.sneakers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: sneakers;
+  background-image: url(../fotos/grillaIndex/sneakers.webp);
+  background-position: center;
+  border-radius: 0.3rem;
+  align-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  opacity: 60%;
+  transform: translate 1px;
+  transition: all 10s;
+}
+.sneakers a {
+  text-decoration: none;
+  color: white;
+}
+
+.accesorios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: accesorios;
+  background-image: url(../fotos/grillaIndex/accesorios.jpg);
+  background-position: center;
+  border-radius: 0.3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  opacity: 60%;
+  transform: translate 1px;
+  transition: all 10s;
+}
+.accesorios a {
+  text-decoration: none;
+  color: white;
+}
+
+.clothing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: clothing;
+  background-image: url(../fotos/grillaIndex/clothing.jpg);
+  background-position: inherit;
+  border-radius: 0.3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  opacity: 60%;
+  transform: translate 1px;
+  transition: all 10s;
+}
+.clothing a {
+  text-decoration: none;
+  color: white;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: brands;
+  background-image: url(../fotos/grillaIndex/brands.jpg);
+  background-position: center;
+  border-radius: 0.3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  opacity: 60%;
+  transform: translate 1px;
+  transition: all 10s;
+}
+.brands a {
+  text-decoration: none;
+  color: white;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nosotros;
+  background-image: url(../fotos/grillaIndex/nosotros.jpg);
+  background-position: center;
+  border-radius: 0.3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  opacity: 60%;
+  transform: translate 1px;
+  transition: all 10s;
+}
+.nosotros a {
+  text-decoration: none;
+  color: white;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: contacto;
+  background-image: url(../fotos/grillaIndex/contacto.jpg);
+  background-position: center;
+  border-radius: 0.3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  opacity: 60%;
+  transform: translate 1px;
+  transition: all 10s;
+}
+.contacto a {
+  text-decoration: none;
+  color: white;
+}
+
+.divNewsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+}
+.divNewsletter .tituloNewsletter {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem #715b5c;
+  font-size: 2rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.newsletter .email {
+  text-align: left;
+  margin: 0 auto;
+  padding: 1rem;
+  height: 2.7rem;
+  width: 60rem;
+}
+.newsletter .buttonEmail {
+  height: 2.7rem;
+  margin: 0 auto;
+  width: 7rem;
+  margin-top: 1rem;
+}
+
+.email:focus {
+  height: 3rem;
+  width: 80rem;
+  transition: all 2s;
+}
+
+.fondoRosa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #b39495;
+  height: 12.5rem;
+}
+
+.menuFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7B6B6Bff;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  width: 43.7rem;
+}
+.menuFooter ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+}
+.menuFooter ul li {
+  margin: 0.6rem;
+}
+.menuFooter ul li a {
+  color: #0d0a0a;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0.3rem;
+}
+
+.menuFooter li a:hover {
+  color: #715b5c;
+}
+
+.redes, .metodosDePago {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.logosRedes {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  margin-left: 0.3rem;
+}
+.logosRedes img {
+  height: 50px;
+  width: 50px;
+}
+
+.logosPagos {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  gap: 0.2rem;
+  margin-right: 0.3rem;
+}
+.logosPagos img {
+  height: 30px;
+  width: 40px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #0d0a0a;
+  background-color: #b39495;
+  padding: 0.3rem;
+}
+
+.container {
+  padding-top: 6.2rem;
+  color: white;
+  width: 50rem;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  height: 40rem;
+}
+
+.login {
+  float: right;
+}
+
+.sneakers {
+  margin: 0.2rem;
+}
+
+.talles {
+  height: 20rem;
+  width: 18.75rem;
+  font: 1.2rem;
+  margin: 0 auto;
+  margin-top: 3.1rem;
+  margin-bottom: 3.1rem;
+}
+
+.tablasFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+td {
+  color: white;
+  width: 20%;
+  text-align: center;
+}
+
+th {
+  background-color: #7B6B6Bff;
+  color: white;
+  width: 20%;
+  text-align: center;
+}
+
+caption {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#gridSneakers {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 400px);
+  background-color: white;
+  align-content: space-around;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  height: 150rem;
+  justify-content: center;
+}
+
+#gridSneakers div a {
+  text-decoration: none;
+  color: #0d0a0a;
+}
+#gridSneakers div a img {
+  height: 300px;
+  width: 300px;
+}
+
+.agregarAlCarrito {
+  border: 0.1rem solid #0d0a0a;
+  padding: 0.3rem;
+  background-color: #0d0a0a;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+
+#gridClothing {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 400px);
+  background-color: white;
+  align-content: space-evenly;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  margin: 0 auto;
+  padding: 3.1rem 3.1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#gridClothing div a {
+  text-decoration: none;
+  color: #0d0a0a;
+}
+#gridClothing div a img {
+  height: 350px;
+  width: 250px;
+}
+
+.imagenSneakers {
+  height: 100%;
+  width: 100%;
+}
+
+#gridAccesories {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 400px);
+  background-color: white;
+  align-content: space-evenly;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  margin: 0 auto;
+  padding: 3.1rem 3.1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#gridAccesories div a {
+  text-decoration: none;
+  color: #0d0a0a;
+}
+#gridAccesories div a img {
+  height: 350px;
+  width: 250px;
+}
+
+#formularioDeContacto {
+  color: white;
+  padding: 1.2rem;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+  width: 31.25rem;
+  text-align: left;
+  background-color: #b39495;
+}
+
+.fieldsetSeparacion {
+  padding: 0.6rem;
+}
+
+.legendContacto {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b42829;
+  text-align: center;
+  text-shadow: 0.06rem 0.06rem 0.06rem #434444;
+}
+
+.contenedorTitulo {
+  display: flex;
+  justify-content: center;
+  background-image: url(../fotos/banners/banner-titulos-h2.webp);
+  background-position: cover;
+  height: 10rem;
+  margin: 2rem;
+  padding: 1rem;
+}
+.contenedorTitulo .tituloSeccion {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 0, 2rem 0, 2rem 0, 2rem #b39495;
+}
+
+.contenedorDatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: url(../fotos/banners/nikedunksb-chunkybanner.jpg);
+  background-position: center;
+  height: 45rem;
+  margin: 0 auto;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-bottom: 7rem;
+}
+.contenedorDatos .contenedorMapa {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  border-radius: 0.2rem;
+}
+.contenedorDatos .contenedorMapa .mapa {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.contenedorDatos .contenedorTextoMapa {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+}
+.contenedorDatos .contenedorTextoMapa .tituloMapa {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+}
+.contenedorDatos .contenedorTextoMapa .textoMapa {
+  font-size: 2rem;
+  color: white;
+}
+
+.seccionWeAre {
+  margin-top: 10rem;
+  height: 30rem;
+}
+.seccionWeAre .contenedorWeAre {
+  display: flex;
+  flex-direction: column;
+  width: 100rem;
+  margin: 0 auto;
+}
+.seccionWeAre .contenedorWeAre .weAre {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
+}
+.seccionWeAre .contenedorWeAre .quienesSomos {
+  display: flex;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoHeader {
+    height: 7.5rem;
+  }
+  .logoHeader .logoFoto img {
+    height: 7rem;
+    width: 7rem;
+  }
+  .logoHeader .logoHype a h1 {
+    font-size: 2.8rem;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    height: 2.5rem;
+  }
+
+  .banner {
+    height: 60rem;
+  }
+
+  .seccionWeAre {
+    height: 17rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+  .seccionWeAre .contenedorWeAre {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin: 0 auto;
+  }
+  .seccionWeAre .contenedorWeAre .weAre {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .seccionWeAre .contenedorWeAre .quienesSomos {
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+  }
+
+  .divNewsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+  }
+  .divNewsletter .tituloNewsletter {
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.2rem #715b5c;
+    font-size: 1.8rem;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .newsletter .email {
+    text-align: left;
+    margin: 0 auto;
+    padding: 1rem;
+    height: 2.5rem;
+    width: 40rem;
+  }
+  .newsletter .buttonEmail {
+    height: 2.5rem;
+    margin: 0 auto;
+    width: 6rem;
+    margin-top: 1rem;
+  }
+
+  .email:focus {
+    height: 2.7rem;
+    width: 50rem;
+    transition: all 2s;
+  }
+
+  .contenedorDatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(../fotos/banners/nikedunksb-chunkybanner.jpg);
+    background-position: center;
+    height: 45rem;
+    margin: 0 auto;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+  }
+  .contenedorDatos .contenedorMapa {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    border-radius: 0.2rem;
+  }
+  .contenedorDatos .contenedorMapa .mapa {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .contenedorDatos .contenedorTextoMapa {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  }
+  .contenedorDatos .contenedorTextoMapa .tituloMapa {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .contenedorDatos .contenedorTextoMapa .textoMapa {
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+  }
+
+  .fondoRosa {
+    height: 17rem;
+  }
+
+  .redes, .metodosDePago {
+    margin: 1rem;
+    width: 20rem;
+  }
+  .redes h5, .metodosDePago h5 {
+    font-size: 1rem;
+  }
+  .redes .logosRedes img, .metodosDePago .logosRedes img {
+    height: 38px;
+    width: 38px;
+  }
+
+  .metodosDePago {
+    margin: 1rem;
+    width: 24rem;
+  }
+  .metodosDePago h5 {
+    font-size: 1rem;
+  }
+  .metodosDePago .logosRedes img {
+    height: 25px;
+    width: 35px;
+  }
+
+  .menuFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7B6B6Bff;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    width: 40rem;
+  }
+  .menuFooter ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+  }
+  .menuFooter ul li {
+    margin: 0.3rem;
+  }
+
+  #gridSneakers {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: repeat(2, 330px);
+    background-color: white;
+    align-content: space-around;
+    grid-column-gap: 2.2rem;
+    grid-row-gap: 2.2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    height: 150rem;
+    justify-content: center;
+  }
+  #gridSneakers div a img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .agregarAlCarrito {
+    font-size: 1rem;
+    margin-top: 4px;
+    padding: 4px;
+  }
+
+  #gridClothing {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: repeat(3, 330px);
+    background-color: white;
+    align-content: space-evenly;
+    grid-column-gap: 2.3rem;
+    grid-row-gap: 2.3rem;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #gridClothing div a img {
+    height: 240px;
+    width: 170px;
+  }
+
+  #gridAccesories {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: repeat(3, 330px);
+    background-color: white;
+    align-content: space-evenly;
+    grid-column-gap: 2.3rem;
+    grid-row-gap: 2.3rem;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #gridAccesories div a img {
+    height: 240px;
+    width: 170px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .logoHeader {
+    height: 7.5rem;
+  }
+  .logoHeader .logoFoto img {
+    height: 6.8rem;
+    width: 6.8rem;
+  }
+  .logoHeader .logoHype a h1 {
+    font-size: 2.5rem;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    height: 2.4rem;
+  }
+
+  .banner {
+    height: 40rem;
+  }
+  .banner .tituloBanner, .banner .tituloAbajoBanner, .banner .botonBanner {
+    font-size: 1.8rem;
+    transform: translate(2rem, 4rem);
+  }
+
+  .seccionWeAre {
+    height: 18rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+  .seccionWeAre .contenedorWeAre {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .seccionWeAre .contenedorWeAre .weAre {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  .seccionWeAre .contenedorWeAre .quienesSomos {
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+  }
+
+  .grillaSections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 7px 7px;
+    grid-auto-flow: row;
+    grid-template-areas: "sneakers sneakers" "clothing clothing" "accesorios accesorios" "brands brands" "nosotros nosotros" "contacto contacto";
+    padding: 3rem;
+    height: 80rem;
+  }
+
+  .divNewsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    margin: 0.3rem;
+  }
+  .divNewsletter .tituloNewsletter {
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.2rem #715b5c;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .newsletter .email {
+    text-align: left;
+    margin: 0 auto;
+    padding: 1rem;
+    height: 2.5rem;
+    width: 20rem;
+  }
+  .newsletter .buttonEmail {
+    height: 2.2rem;
+    margin: 0 auto;
+    width: 5rem;
+    margin-top: 1rem;
+  }
+
+  .email:focus {
+    height: 2.2rem;
+    width: 30rem;
+    transition: all 2s;
+  }
+
+  .contenedorDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url(../fotos/banners/nikedunksb-chunkybanner.jpg);
+    background-position: center;
+    height: 45rem;
+    margin: 0 auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contenedorDatos .contenedorMapa {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    border-radius: 0.2rem;
+  }
+  .contenedorDatos .contenedorMapa .mapa {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 30rem;
+  }
+  .contenedorDatos .contenedorTextoMapa {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
+  }
+  .contenedorDatos .contenedorTextoMapa .tituloMapa {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .contenedorDatos .contenedorTextoMapa .textoMapa {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+  }
+
+  .fondoRosa {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+  }
+
+  .redes, .metodosDePago {
+    margin: 0 auto;
+    width: 20rem;
+  }
+  .redes h5, .metodosDePago h5 {
+    font-size: 1rem;
+  }
+  .redes .logosRedes img, .metodosDePago .logosRedes img {
+    height: 38px;
+    width: 38px;
+  }
+
+  .metodosDePago {
+    margin: 0 auto;
+    width: 24rem;
+  }
+  .metodosDePago h5 {
+    font-size: 1rem;
+  }
+  .metodosDePago .logosRedes img {
+    height: 25px;
+    width: 35px;
+  }
+
+  .menuFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7B6B6Bff;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    width: 40rem;
+  }
+  .menuFooter ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+  }
+  .menuFooter ul li {
+    margin: 0.3rem;
+  }
+
+  #gridSneakers {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 250px);
+    background-color: white;
+    align-content: space-around;
+    grid-column-gap: 2.1rem;
+    grid-row-gap: 2.1rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 180rem;
+    justify-content: center;
+  }
+  #gridSneakers div a img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .agregarAlCarrito {
+    font-size: 0.8rem;
+    margin-top: 3px;
+    padding: 3px;
+  }
+
+  #gridClothing {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 250px);
+    background-color: white;
+    align-content: space-evenly;
+    grid-column-gap: 2.1rem;
+    grid-row-gap: 2.1rem;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  #gridClothing div a img {
+    height: 200px;
+    width: 130px;
+  }
+
+  #gridAccesories {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 250px);
+    background-color: white;
+    align-content: space-evenly;
+    grid-column-gap: 2.1rem;
+    grid-row-gap: 2.1rem;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #gridAccesories div a img {
+    height: 200px;
+    width: 130px;
+  }
+
+  .talles {
+    height: 18rem;
+    width: 15rem;
+    font: 1.2rem;
+  }
+
+  .container {
+    padding-top: 6.2rem;
+    color: white;
+    width: 30rem;
+    margin: 0 auto;
+    font-family: "Ubuntu", sans-serif;
+    height: 40rem;
+  }
+}

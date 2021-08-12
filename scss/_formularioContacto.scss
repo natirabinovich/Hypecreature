@@ -1,0 +1,23 @@
+#formularioDeContacto{
+    color: $color1;
+    padding: 1.2rem;
+    margin: 0 auto;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.5rem;
+    width: 31.25rem;
+    text-align:left;
+    background-color: $color3;
+}
+
+.fieldsetSeparacion {
+    padding: 0.6rem;
+}
+
+.legendContacto {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b42829;
+    text-align: center;
+    text-shadow: 0.06rem 0.06rem 0.06rem $color5;
+}

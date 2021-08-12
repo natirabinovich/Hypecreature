@@ -1,0 +1,32 @@
+.talles {
+    height: 20rem;
+    width: 18.75rem;
+    font: 1.2rem;
+    margin: 0 auto;
+    margin-top: 3.1rem;
+    margin-bottom: 3.1rem;
+}
+
+.tablasFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+td {
+    color: $color1;
+    width: 20%;
+    text-align: center;
+}
+
+th {
+    background-color: #7B6B6Bff;
+    color: $color1;
+    width: 20%;
+    text-align: center;
+}
+
+caption {
+    color: $color1;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,312 @@
+
+@media only screen and (max-width: 375px) {
+    
+    .logoHeader {
+        height: 7.5rem;
+        .logoFoto {
+            img {
+                height: 6.8rem;
+                width: 6.8rem;
+            }
+        }
+        .logoHype {
+            a {
+                h1 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    
+    .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    height: 2.4rem;
+    }
+
+    .banner {
+        height: 40rem;
+        .tituloBanner {
+            font-size: 1.8rem;
+            transform: translate(2rem, 4rem)
+        }
+    }
+
+    .seccionWeAre {
+        height: 18rem;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        .contenedorWeAre {
+            display: flex;
+            flex-direction: column;
+            width: 35rem;
+            margin: 0 auto;
+            .weAre {
+                font-size: 2.1rem;
+                font-weight: bold;
+                color: $color1;
+                text-align: center;
+                padding: 0.7rem;
+            }
+            .quienesSomos {
+                display: flex;
+                margin: 0 auto;
+                font-size: 1.4rem;
+                color: $color1;
+                text-align: center;
+                padding: 0.7rem;
+            }
+        }
+    }
+
+    .grillaSections {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 7px 7px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "sneakers sneakers"
+        "clothing clothing"
+        "accesorios accesorios"
+        "brands brands"
+        "nosotros nosotros"
+        "contacto contacto";
+        padding: 3rem;
+        height: 80rem;
+    }
+
+    .divNewsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40rem;
+        margin: 0.3rem;
+        .tituloNewsletter{
+                color: $color1;
+                text-shadow: 0.2rem 0.2rem 0.2rem $color4;
+                font-size: 1.6rem;
+                text-align: center;
+                padding: 0.5rem;
+            }
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        .email {
+            text-align: left;
+            margin: 0 auto;
+            padding: 1rem;
+            height: 2.5rem;
+            width: 20rem;
+        }
+        .buttonEmail{
+            height: 2.2rem;
+            margin: 0 auto;
+            width: 5rem;
+            margin-top: 1rem;
+        }
+    }
+    
+    .email:focus {
+        height: 2.2rem;
+        width: 30rem;
+        transition: all 2s; 
+    }
+
+    .contenedorDatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-image: url(../fotos/banners/nikedunksb-chunkybanner.jpg);
+        background-position: center;
+        height: 45rem;
+        margin: 0 auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        .contenedorMapa {
+            display: flex;
+            justify-content: center;
+            align-content: flex-end;
+            border-radius: 0.2rem;
+            .mapa{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                height: 30rem;
+            }
+        }
+        .contenedorTextoMapa {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-shadow: 0.2rem 0.2rem 0.2rem $color2;
+            .tituloMapa {
+                font-size: 2rem;
+                font-weight: bolder;
+                color: $color1;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .textoMapa {
+                font-size: 1.3rem;
+                color: $color1;
+                text-align: center;
+            }
+        }
+    }
+    .fondoRosa {
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+    }
+
+    .redes {
+        margin: 0 auto;
+        width: 20rem;
+        
+        h5{
+            font-size: 1rem;
+        }
+        .logosRedes {
+            img {
+                height: 38px;
+                width: 38px;
+            }
+        }
+    }
+
+    .metodosDePago {
+        margin: 0 auto;
+        width: 24rem;
+        h5{
+            font-size: 1rem;
+        }
+        .logosRedes {
+            img {
+                height: 25px;
+                width: 35px;
+            }
+        }
+    }
+
+    .menuFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #7B6B6Bff;
+        font-size: 1.4rem;
+        font-weight: lighter;
+        width: 40rem;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            text-align: center; 
+            overflow: hidden;
+            li {
+                margin: $margin-base;
+            }
+        }
+    }
+    
+    #gridSneakers {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 250px);
+        background-color: $color1;
+        align-content: space-around;
+        grid-column-gap: 2.1rem;
+        grid-row-gap: 2.1rem;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+        height: 180rem;
+        justify-content: center;
+        div {
+            a{
+                img {
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .agregarAlCarrito {
+        font-size: 0.8rem;
+        margin-top: 3px;
+        padding: 3px;
+    }
+
+    #gridClothing {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 250px);
+        background-color: $color1;
+        align-content: space-evenly;
+        grid-column-gap: 2.1rem;
+        grid-row-gap: 2.1rem;
+        margin: 0 auto;
+        padding: 3rem 3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+        div {
+            a{
+                img {
+                    height: 200px;
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+    #gridAccesories {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2, 250px);
+        background-color: $color1;
+        align-content: space-evenly;
+        grid-column-gap: 2.1rem;
+        grid-row-gap: 2.1rem;
+        margin: 0 auto;
+        padding: 3rem 3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        div {
+            a{
+                img {
+                    height: 200px;
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+    .talles {
+        height: 18rem;
+        width: 15rem;
+        font: 1.2rem;
+    }
+
+    .container {
+        padding-top: 6.2rem;
+        color:$color1;
+        width: 30rem;
+        margin: 0 auto;
+        font-family: 'Ubuntu', sans-serif;
+        height: 40rem;
+    }
+}

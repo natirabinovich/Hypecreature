@@ -1,0 +1,83 @@
+.fondoRosa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $color3;
+    height: 12.5rem;
+}
+
+.menuFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7B6B6Bff;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    width: 43.7rem;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: center; 
+        overflow: hidden;
+        li {
+            margin: 0.6rem;
+            a {
+                color: $color2;
+                text-decoration: none;
+                text-align: center;
+                display: inline-block;
+                padding: 0.3rem;
+            }
+        }
+    }
+}
+
+.menuFooter li a:hover {
+    color: $color4;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-left: $margin-base;
+}
+
+.logosRedes {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    margin-left: $margin-base;
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.metodosDePago {
+    @extend .redes;
+}
+
+.logosPagos {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    gap: 0.2rem;
+    margin-right: $margin-base;
+    img {
+        height: 30px;
+        width: 40px;
+    }
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: $color2;
+    background-color: $color3;
+    padding: $margin-base;
+}

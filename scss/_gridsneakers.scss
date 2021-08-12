@@ -1,0 +1,38 @@
+#gridSneakers {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 400px);
+    background-color: $color1;
+    align-content: space-around;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    height: 150rem;
+    justify-content: center;
+}
+
+#gridSneakers{
+    div {
+        a {
+            text-decoration: none;
+            color: $color2;
+            img {
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }      
+}
+
+.agregarAlCarrito {
+    border: 0.1rem solid $color2;
+    padding: 0.3rem;
+    background-color: $color2; 
+    color: #ffffff; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 1rem;
+    margin-top: 3px;
+}

@@ -1,0 +1,52 @@
+
+//VARIABLES
+
+$color1: white;
+$color2: #0d0a0a;
+$color3: #b39495;
+$color4: #715b5c;
+$color5: #434444;
+$color6: #7f8c8b;
+$color-hover: #7B6B6Bff;
+
+$margin-base: 0.3rem;
+
+$font: "Ubuntu", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #070606;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+//IMPORTS
+
+@import "header";
+@import "navbar";
+@import "banner";
+@import "grillaSections";
+@import "newsletter";
+@import "footer";
+@import "bootstrap";
+@import "tablatalles";
+@import "gridsneakers";
+@import "gridclothing";
+@import "gridaccesories";
+@import "formularioContacto";
+@import "tituloSecciones";
+@import "mapa";
+@import "us";
+@import "mediaQueriesTablet";
+@import "mediaQueriesPhone";
+
+

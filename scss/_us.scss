@@ -1,0 +1,25 @@
+.seccionWeAre {
+    margin-top: 10rem;
+    height: 30rem;
+    .contenedorWeAre {
+        display: flex;
+        flex-direction: column;
+        width: 100rem;
+        margin: 0 auto;
+        .weAre {
+            font-size: 3rem;
+            font-weight: bold;
+            color: $color1;
+            text-align: center;
+            padding: 0.7rem;
+        }
+        .quienesSomos {
+            display: flex;
+            margin: 0 auto;
+            font-size: 2rem;
+            color: $color1;
+            text-align: center;
+            padding: 0.7rem;
+        }
+    }
+}

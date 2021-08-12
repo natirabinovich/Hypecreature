@@ -1,0 +1,17 @@
+.contenedorTitulo {
+    display: flex;
+    justify-content: center;
+    background-image: url(../fotos/banners/banner-titulos-h2.webp);
+    background-position: cover;
+    height: 10rem;
+    margin: 2rem;
+    padding: 1rem;
+    .tituloSeccion {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $color1;
+        text-shadow: 0,2rem 0,2rem 0,2rem $color3;
+    }
+}
