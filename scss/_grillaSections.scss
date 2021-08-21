@@ -1,26 +1,24 @@
 .grillaSections {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 7px 7px;
-    grid-auto-flow: row;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 7px 7px;
+  grid-auto-flow: row;
+  grid-template-areas:
     "sneakers sneakers sneakers sneakers accesorios accesorios"
     "sneakers sneakers sneakers sneakers accesorios accesorios"
     "brands brands clothing clothing clothing clothing"
     "brands brands clothing clothing clothing clothing"
     "brands brands nosotros nosotros contacto contacto"
     "brands brands nosotros nosotros contacto contacto";
-    padding: 7rem;
-    height: 80rem;
-}
+  padding: 7rem;
+  height: 80rem;
 
-.sneakers { 
+  // Parent class for each individual element in the grid
+  .gridElement {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: sneakers; 
-    background-image: url(../fotos/grillaIndex/sneakers.webp);
     background-position: center;
     border-radius: 0.3rem;
     align-content: center;
@@ -30,113 +28,40 @@
     opacity: 60%;
     transform: translate (1px);
     transition: all 10s;
-    a {
-        text-decoration: none;
-        color: $color1;
-    }
-}
 
-.accesorios { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: accesorios; 
-    background-image: url(../fotos/grillaIndex/accesorios.jpg);
-    background-position: center;
-    border-radius: 0.3rem;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $color1;
-    text-shadow: 0.2rem 0.2rem 0.2rem $color2;
-    opacity: 60%;
-    transform: translate (1px);
-    transition: all 10s;
     a {
-        text-decoration: none;
-        color: $color1;
+      text-decoration: none;
+      color: $color1;
     }
-}
 
-.clothing { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: clothing; 
-    background-image: url(../fotos/grillaIndex/clothing.jpg);
-    background-position:inherit;
-    border-radius: 0.3rem;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $color1;
-    text-shadow: 0.2rem 0.2rem 0.2rem $color2;
-    opacity: 60%;
-    transform: translate (1px);
-    transition: all 10s;
-    a {
-        text-decoration: none;
-        color: $color1;
+    // These overwrites the image and grid area for the element
+    &.sneakers {
+      grid-area: sneakers;
+      background-image: url(../fotos/grillaIndex/sneakers.webp);
     }
-}
-
-.brands { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: brands; 
-    background-image: url(../fotos/grillaIndex/brands.jpg);
-    background-position: center;
-    border-radius: 0.3rem;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $color1;
-    text-shadow: 0.2rem 0.2rem 0.2rem $color2;
-    opacity: 60%;
-    transform: translate (1px);
-    transition: all 10s;
-    a {
-        text-decoration: none;
-        color: $color1;
+    &.accesorios {
+      background-image: url(../fotos/grillaIndex/accesorios.jpg);
+      grid-area: accesorios;
     }
-}
-
-.nosotros { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: nosotros; 
-    background-image: url(../fotos/grillaIndex/nosotros.jpg);
-    background-position: center;
-    border-radius: 0.3rem;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $color1;
-    text-shadow: 0.2rem 0.2rem 0.2rem $color2;
-    opacity: 60%;
-    transform: translate (1px);
-    transition: all 10s;
-    a {
-        text-decoration: none;
-        color: $color1;
+    &.clothing {
+      background-image: url(../fotos/grillaIndex/clothing.jpg);
+      grid-area: clothing;
     }
-}
-
-.contacto { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: contacto;
-    background-image: url(../fotos/grillaIndex/contacto.jpg);
-    background-position: center; 
-    border-radius: 0.3rem;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $color1;
-    text-shadow: 0.2rem 0.2rem 0.2rem $color2;
-    opacity: 60%;
-    transform: translate (1px);
-    transition: all 10s;
-    a {
-        text-decoration: none;
-        color: $color1;
+    &.brands {
+      background-image: url(../fotos/grillaIndex/brands.jpg);
+      grid-area: brands;
     }
+    &.nosotros {
+      background-image: url(../fotos/grillaIndex/nosotros.jpg);
+      grid-area: nosotros;
+    }
+    &.contacto {
+      background-image: url(../fotos/grillaIndex/contacto.jpg);
+      grid-area: contacto;
+    }
+    &.login {
+      background-image: url(../fotos/grillaIndex/login.jpg);
+      grid-area: login;
+    }
+  }
 }
