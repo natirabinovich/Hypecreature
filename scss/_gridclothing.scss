@@ -1,7 +1,7 @@
 #gridClothing {
     display: grid;
     grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(3, 450px);
     background-color: $color1;
     align-content: space-evenly;
     grid-column-gap: 2.5rem;
@@ -20,7 +20,7 @@
             text-decoration: none;
             color: $color2;
             img {
-                height: 350px;
+                height: 400px;
                 width: 250px;
             }
         }
