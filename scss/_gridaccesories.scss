@@ -1,7 +1,7 @@
 #gridAccesories {
     display: grid;
     grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(3, 450px);
     background-color: $color1;
     align-content: space-evenly;
     grid-column-gap: 2.5rem;
