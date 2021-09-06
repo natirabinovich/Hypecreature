@@ -5,7 +5,7 @@
     margin-top: 1.8rem;
     margin-bottom: 1.8rem;
     font-size: 1.5rem;
-    width: 31.25rem;
+    width: 50rem;
     text-align:left;
     background-color: $color3;
 }
@@ -20,4 +20,7 @@
     color: #b42829;
     text-align: center;
     text-shadow: 0.06rem 0.06rem 0.06rem $color5;
+    .campoFormulario {
+        width: 30rem;
+    }
 }
