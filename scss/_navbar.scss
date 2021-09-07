@@ -5,9 +5,28 @@
     background-color: #b39495;
     font-size: 1.5rem;
     height: 3.5rem;
-    .navList {
-        height: 3.5rem;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    justify-content: center;
+    li { 
+        list-style: none;
+        a {
+            display: inline-block;
+            color: $color2;
+            padding: 0.6rem;
+            gap: 1.25rem;
+            text-decoration: none;
+            
+        }
     }
+}
+
+.navList li a:hover {
+    color: $color4;
 }
 
 

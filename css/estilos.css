@@ -11,7 +11,7 @@ html {
 
 body {
   background-color: #070606;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .logoHeader {
@@ -20,27 +20,22 @@ body {
   height: 9rem;
   margin: 0.5rem;
 }
-
 .logoHeader .logoFoto {
   display: flex;
   width: 8.5rem;
 }
-
 .logoHeader .logoFoto img {
   height: 8.5rem;
   width: 8.5rem;
 }
-
 .logoHeader .logoHype {
   display: flex;
   width: 30rem;
 }
-
 .logoHeader .logoHype a {
   display: flex;
   text-decoration: none;
 }
-
 .logoHeader .logoHype a h1 {
   padding: 2.3rem;
   padding-left: 0.2rem;
@@ -59,29 +54,15 @@ body {
   height: 3.5rem;
 }
 
-.responsiveNavBar {
-  background-color: #b39495;
-}
-
-.responsiveNavBar .navbar-toggler {
-  background-color: bisque;
-}
-
-.responsiveNavBar .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
 .navList {
   display: flex;
   list-style: none;
   overflow: hidden;
+  justify-content: center;
 }
-
 .navList li {
-  float: left;
   list-style: none;
 }
-
 .navList li a {
   display: inline-block;
   color: #0d0a0a;
@@ -102,19 +83,19 @@ body {
   max-width: 100%;
   color: white;
 }
-
-.banner .tituloBanner, .banner .tituloAbajoBanner, .banner .botonBanner {
+.banner .tituloBanner, .banner .botonBanner, .banner .tituloAbajoBanner {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   font-size: 2.7rem;
   text-align: left;
   padding: 0.4rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   text-shadow: 0.2rem 0.2rem 0.2rem #b39495;
   transform: translate(6rem, 9.3rem);
 }
-
 .banner .botonBanner a {
   text-decoration: none;
   color: #0d0a0a;
@@ -134,7 +115,6 @@ body {
   padding: 7rem;
   height: 80rem;
 }
-
 .grillaSections .gridElement {
   display: flex;
   justify-content: center;
@@ -149,42 +129,34 @@ body {
   transform: translate 1px;
   transition: all 10s;
 }
-
 .grillaSections .gridElement a {
   text-decoration: none;
   color: white;
 }
-
 .grillaSections .gridElement.sneakers {
   grid-area: sneakers;
   background-image: url(../fotos/grillaIndex/sneakers.webp);
 }
-
 .grillaSections .gridElement.accesorios {
   background-image: url(../fotos/grillaIndex/accesorios.jpg);
   grid-area: accesorios;
 }
-
 .grillaSections .gridElement.clothing {
   background-image: url(../fotos/grillaIndex/clothing.jpg);
   grid-area: clothing;
 }
-
 .grillaSections .gridElement.brands {
   background-image: url(../fotos/grillaIndex/brands.jpg);
   grid-area: brands;
 }
-
 .grillaSections .gridElement.nosotros {
   background-image: url(../fotos/grillaIndex/nosotros.jpg);
   grid-area: nosotros;
 }
-
 .grillaSections .gridElement.contacto {
   background-image: url(../fotos/grillaIndex/contacto.jpg);
   grid-area: contacto;
 }
-
 .grillaSections .gridElement.login {
   background-image: url(../fotos/grillaIndex/login.jpg);
   grid-area: login;
@@ -197,7 +169,6 @@ body {
   justify-content: center;
   height: 40rem;
 }
-
 .divNewsletter .tituloNewsletter {
   color: white;
   text-shadow: 0.2rem 0.2rem 0.2rem #715b5c;
@@ -209,7 +180,6 @@ body {
   flex-direction: column;
   padding: 1rem;
 }
-
 .newsletter .email {
   text-align: left;
   margin: 0 auto;
@@ -217,7 +187,6 @@ body {
   height: 2.7rem;
   width: 60rem;
 }
-
 .newsletter .buttonEmail {
   height: 2.7rem;
   margin: 0 auto;
@@ -248,7 +217,6 @@ body {
   font-weight: lighter;
   width: 43.7rem;
 }
-
 .menuFooter ul {
   display: flex;
   flex-direction: row;
@@ -256,11 +224,9 @@ body {
   text-align: center;
   overflow: hidden;
 }
-
 .menuFooter ul li {
   margin: 0.6rem;
 }
-
 .menuFooter ul li a {
   color: #0d0a0a;
   text-decoration: none;
@@ -288,7 +254,6 @@ body {
   gap: 0.2rem;
   margin-left: 0.3rem;
 }
-
 .logosRedes img {
   height: 50px;
   width: 50px;
@@ -301,7 +266,6 @@ body {
   gap: 0.2rem;
   margin-right: 0.3rem;
 }
-
 .logosPagos img {
   height: 30px;
   width: 40px;
@@ -321,7 +285,7 @@ body {
   color: white;
   width: 50rem;
   margin: 0 auto;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   height: 40rem;
 }
 
@@ -385,7 +349,6 @@ caption {
   text-decoration: none;
   color: #0d0a0a;
 }
-
 #gridSneakers div a img {
   height: 300px;
   width: 300px;
@@ -405,7 +368,7 @@ caption {
 #gridClothing {
   display: grid;
   grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(3, 400px);
+  grid-template-rows: repeat(3, 450px);
   background-color: white;
   align-content: space-evenly;
   grid-column-gap: 2.5rem;
@@ -422,9 +385,8 @@ caption {
   text-decoration: none;
   color: #0d0a0a;
 }
-
 #gridClothing div a img {
-  height: 350px;
+  height: 300px;
   width: 250px;
 }
 
@@ -436,7 +398,7 @@ caption {
 #gridAccesories {
   display: grid;
   grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(3, 400px);
+  grid-template-rows: repeat(3, 450px);
   background-color: white;
   align-content: space-evenly;
   grid-column-gap: 2.5rem;
@@ -453,7 +415,6 @@ caption {
   text-decoration: none;
   color: #0d0a0a;
 }
-
 #gridAccesories div a img {
   height: 350px;
   width: 250px;
@@ -466,7 +427,7 @@ caption {
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
   font-size: 1.5rem;
-  width: 31.25rem;
+  width: 50rem;
   text-align: left;
   background-color: #b39495;
 }
@@ -482,6 +443,9 @@ caption {
   text-align: center;
   text-shadow: 0.06rem 0.06rem 0.06rem #434444;
 }
+.legendContacto .campoFormulario {
+  width: 30rem;
+}
 
 .contenedorTitulo {
   display: flex;
@@ -492,7 +456,6 @@ caption {
   margin: 2rem;
   padding: 1rem;
 }
-
 .contenedorTitulo .tituloSeccion {
   text-align: center;
   font-size: 3.5rem;
@@ -514,20 +477,17 @@ caption {
   margin-right: 7rem;
   margin-bottom: 7rem;
 }
-
 .contenedorDatos .contenedorMapa {
   display: flex;
   justify-content: center;
   align-content: flex-end;
   border-radius: 0.2rem;
 }
-
 .contenedorDatos .contenedorMapa .mapa {
   display: flex;
   align-content: center;
   justify-content: center;
 }
-
 .contenedorDatos .contenedorTextoMapa {
   display: flex;
   flex-direction: column;
@@ -535,14 +495,12 @@ caption {
   justify-content: center;
   text-shadow: 0.2rem 0.2rem 0.2rem #0d0a0a;
 }
-
 .contenedorDatos .contenedorTextoMapa .tituloMapa {
   font-size: 4rem;
   font-weight: bolder;
   color: white;
   text-transform: uppercase;
 }
-
 .contenedorDatos .contenedorTextoMapa .textoMapa {
   font-size: 2rem;
   color: white;
@@ -552,14 +510,12 @@ caption {
   margin-top: 10rem;
   height: 30rem;
 }
-
 .seccionWeAre .contenedorWeAre {
   display: flex;
   flex-direction: column;
   width: 100rem;
   margin: 0 auto;
 }
-
 .seccionWeAre .contenedorWeAre .weAre {
   font-size: 3rem;
   font-weight: bold;
@@ -567,7 +523,6 @@ caption {
   text-align: center;
   padding: 0.7rem;
 }
-
 .seccionWeAre .contenedorWeAre .quienesSomos {
   display: flex;
   margin: 0 auto;
@@ -588,16 +543,21 @@ caption {
   .logoHeader .logoHype a h1 {
     font-size: 2.8rem;
   }
+
   .navBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
-    font-size: 1.3rem;
-    height: 2.5rem;
+    font-size: 1.1rem;
+    height: 3rem;
+    float: left;
   }
+
   .banner {
+    margin-top: 0.5rem;
     height: 60rem;
   }
+
   .seccionWeAre {
     height: 17rem;
     margin-top: 5rem;
@@ -624,6 +584,7 @@ caption {
     text-align: center;
     padding: 0.7rem;
   }
+
   .divNewsletter {
     display: flex;
     flex-direction: column;
@@ -636,6 +597,7 @@ caption {
     text-shadow: 0.2rem 0.2rem 0.2rem #715b5c;
     font-size: 1.8rem;
   }
+
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -654,11 +616,13 @@ caption {
     width: 6rem;
     margin-top: 1rem;
   }
+
   .email:focus {
     height: 2.7rem;
     width: 50rem;
     transition: all 2s;
   }
+
   .contenedorDatos {
     display: flex;
     flex-direction: row;
@@ -701,9 +665,11 @@ caption {
     color: white;
     text-align: center;
   }
+
   .fondoRosa {
     height: 17rem;
   }
+
   .redes, .metodosDePago {
     margin: 1rem;
     width: 20rem;
@@ -715,6 +681,7 @@ caption {
     height: 38px;
     width: 38px;
   }
+
   .metodosDePago {
     margin: 1rem;
     width: 24rem;
@@ -726,6 +693,7 @@ caption {
     height: 25px;
     width: 35px;
   }
+
   .menuFooter {
     display: flex;
     justify-content: center;
@@ -745,6 +713,7 @@ caption {
   .menuFooter ul li {
     margin: 0.3rem;
   }
+
   #gridSneakers {
     display: grid;
     grid-template-columns: repeat(3, 230px);
@@ -763,11 +732,13 @@ caption {
     height: 200px;
     width: 200px;
   }
+
   .agregarAlCarrito {
     font-size: 1rem;
     margin-top: 4px;
     padding: 4px;
   }
+
   #gridClothing {
     display: grid;
     grid-template-columns: repeat(3, 230px);
@@ -787,6 +758,7 @@ caption {
     height: 240px;
     width: 170px;
   }
+
   #gridAccesories {
     display: grid;
     grid-template-columns: repeat(3, 230px);
@@ -807,7 +779,6 @@ caption {
     width: 170px;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .logoHeader {
     height: 7.5rem;
@@ -819,13 +790,15 @@ caption {
   .logoHeader .logoHype a h1 {
     font-size: 2.5rem;
   }
+
   .navBar {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 1.2rem;
-    height: 2.4rem;
+    font-size: 1rem;
+    height: 2.9rem;
   }
+
   .banner {
     height: 40rem;
   }
@@ -833,6 +806,7 @@ caption {
     font-size: 1.8rem;
     transform: translate(2rem, 4rem);
   }
+
   .seccionWeAre {
     height: 18rem;
     margin-top: 5rem;
@@ -859,6 +833,7 @@ caption {
     text-align: center;
     padding: 0.7rem;
   }
+
   .grillaSections {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -869,6 +844,7 @@ caption {
     padding: 3rem;
     height: 80rem;
   }
+
   .divNewsletter {
     display: flex;
     flex-direction: column;
@@ -884,6 +860,7 @@ caption {
     text-align: center;
     padding: 0.5rem;
   }
+
   .newsletter {
     display: flex;
     flex-direction: column;
@@ -902,11 +879,13 @@ caption {
     width: 5rem;
     margin-top: 1rem;
   }
+
   .email:focus {
     height: 2.2rem;
     width: 30rem;
     transition: all 2s;
   }
+
   .contenedorDatos {
     display: flex;
     flex-direction: column;
@@ -950,11 +929,13 @@ caption {
     color: white;
     text-align: center;
   }
+
   .fondoRosa {
     display: flex;
     flex-direction: column;
     height: 40rem;
   }
+
   .redes, .metodosDePago {
     margin: 0 auto;
     width: 20rem;
@@ -966,6 +947,7 @@ caption {
     height: 38px;
     width: 38px;
   }
+
   .metodosDePago {
     margin: 0 auto;
     width: 24rem;
@@ -977,6 +959,7 @@ caption {
     height: 25px;
     width: 35px;
   }
+
   .menuFooter {
     display: flex;
     flex-direction: column;
@@ -985,7 +968,7 @@ caption {
     color: #7B6B6Bff;
     font-size: 1.4rem;
     font-weight: lighter;
-    width: 40rem;
+    width: 36rem;
   }
   .menuFooter ul {
     display: flex;
@@ -997,6 +980,7 @@ caption {
   .menuFooter ul li {
     margin: 0.3rem;
   }
+
   #gridSneakers {
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -1015,11 +999,13 @@ caption {
     height: 150px;
     width: 150px;
   }
+
   .agregarAlCarrito {
     font-size: 0.8rem;
     margin-top: 3px;
     padding: 3px;
   }
+
   #gridClothing {
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -1039,6 +1025,7 @@ caption {
     height: 200px;
     width: 130px;
   }
+
   #gridAccesories {
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -1058,18 +1045,19 @@ caption {
     height: 200px;
     width: 130px;
   }
+
   .talles {
     height: 18rem;
     width: 15rem;
     font: 1.2rem;
   }
+
   .container {
     padding-top: 6.2rem;
     color: white;
     width: 30rem;
     margin: 0 auto;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     height: 40rem;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
