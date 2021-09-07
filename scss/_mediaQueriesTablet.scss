@@ -24,7 +24,6 @@
     justify-content: flex-end;
     font-size: 1.1rem;
     height: 3rem;
-    float: left;
     }
 
     .banner {
@@ -265,6 +264,32 @@
                     width: 170px;
                 }
             }
+        }
+    }
+
+    #formularioDeContacto{
+        color: $color1;
+        padding: 1.2rem;
+        margin: 0 auto;
+        margin-bottom: 1.8rem;
+        font-size: 1.3rem;
+        width: 35rem;
+        text-align:left;
+        background-color: $color3;
+    }
+    
+    .fieldsetSeparacion {
+        padding: 0.6rem;
+    }
+    
+    .legendContacto {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #b42829;
+        text-align: center;
+        text-shadow: 0.06rem 0.06rem 0.06rem $color5;
+        .campoFormulario {
+            width: 30rem;
         }
     }
 }
